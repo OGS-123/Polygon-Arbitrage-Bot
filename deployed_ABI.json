@@ -1,0 +1,23 @@
+[
+  {"inputs":[{"internalType":"address","name":"target","type":"address"}],"name":"AddressEmptyCode","type":"error"},
+  {"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"AddressInsufficientBalance","type":"error"},
+  {"inputs":[],"name":"FailedInnerCall","type":"error"},
+  {"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"OwnableInvalidOwner","type":"error"},
+  {"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"OwnableUnauthorizedAccount","type":"error"},
+  {"inputs":[],"name":"ReentrancyGuardReentrantCall","type":"error"},
+  {"inputs":[{"internalType":"address","name":"token","type":"address"}],"name":"SafeERC20FailedOperation","type":"error"},
+  {"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},
+  {"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"recipient","type":"address"},{"indexed":false,"internalType":"uint256","name":"profit","type":"uint256"}],"name":"SentProfit","type":"event"},
+  {"anonymous":false,"inputs":[{"indexed":false,"internalType":"address","name":"token","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"SwapFinished","type":"event"},
+  {"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"sender","type":"address"},{"indexed":false,"internalType":"uint256","name":"amount","type":"uint256"}],"name":"Withdrawal","type":"event"},
+  {"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"uint256","name":"baseAmount","type":"uint256"},{"internalType":"uint256","name":"quoteAmount","type":"uint256"},{"internalType":"bytes","name":"data","type":"bytes"}],"name":"DPPFlashLoanCall","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"uint256","name":"baseAmount","type":"uint256"},{"internalType":"uint256","name":"quoteAmount","type":"uint256"},{"internalType":"bytes","name":"data","type":"bytes"}],"name":"DSPFlashLoanCall","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"uint256","name":"baseAmount","type":"uint256"},{"internalType":"uint256","name":"quoteAmount","type":"uint256"},{"internalType":"bytes","name":"data","type":"bytes"}],"name":"DVMFlashLoanCall","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"components":[{"internalType":"address","name":"flashLoanPool","type":"address"},{"internalType":"uint256","name":"loanAmount","type":"uint256"},{"components":[{"components":[{"internalType":"uint8","name":"protocol","type":"uint8"},{"internalType":"bytes","name":"data","type":"bytes"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"uint256","name":"amountOutMinV3","type":"uint256"},{"internalType":"uint160","name":"sqrtPriceLimitX96","type":"uint160"}],"internalType":"struct IFlashloan.Hop[]","name":"hops","type":"tuple[]"},{"internalType":"uint16","name":"part","type":"uint16"}],"internalType":"struct IFlashloan.Route[]","name":"routes","type":"tuple[]"}],"internalType":"struct IFlashloan.FlashParams","name":"params","type":"tuple"}],"name":"executeFlashloan","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},
+  {"inputs":[],"name":"renounceOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"uint256","name":"_slippage","type":"uint256"}],"name":"setSlippage","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[],"name":"slippage","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},
+  {"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"contract IERC20","name":"token","type":"address"},{"internalType":"address","name":"_to","type":"address"},{"internalType":"uint256","name":"_value","type":"uint256"}],"name":"withdrawToken","outputs":[],"stateMutability":"nonpayable","type":"function"}
+]
