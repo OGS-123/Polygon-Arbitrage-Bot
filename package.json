@@ -24,3 +24,10 @@
     "truffle": "^5.1.32"
   }
 }
+{
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
+
